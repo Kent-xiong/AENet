@@ -40,5 +40,5 @@ python train.py train --exp_config PATH_TO_CONFIG_FILE --resume PATH_TO_CHECKPOI
 
 
 
-###### Declaration: The implementation of the code in this article uses the shell of CDLab.  My code has been highly streamlined based on this.  If further understand and modification of the model's shell are required, please refer to the source code https://github.com/Bobholamovic/CDLab.
+Declaration: The implementation of the code in this article uses the shell of CDLab.  My code has been highly streamlined based on this.  If further understand and modification of the model's shell are required, please refer to the source code https://github.com/Bobholamovic/CDLab.
 
