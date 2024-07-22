@@ -7,11 +7,11 @@ The code has been tested on Python 3.5 and 3.7, and the installed version of PyT
 
 The specific sources of three open-source datasets can be found through the citations in the paper. Below are the datasets that I have segmented.
 
+*GZ-CD：* coming soon
+
 *WHU-CD：* coming soon
 
 *LEVIR-CD:* coming soon
-
-*GZ-CD：* coming soon
 
 After downloading and splitting the dataset, change the path of your own dataset in the **constants. py** file.
 
