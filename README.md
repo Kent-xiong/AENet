@@ -1,0 +1,27 @@
+##### This is the code for the article called "AENet: An Asymmetric Encoder Network with Feature Selection for Change Detection"
+
+##### Run Environment :
+The code has been tested on Python 3.5 and 3.7, and the installed version of PyTorch is CUDA 11.3. Other toolkits can be downloaded one by one using pip when running errors.
+
+##### Dataset download and Settings:
+
+The specific sources of three open-source datasets can be found through the citations in the paper. Below are the datasets that I have segmented.
+*WHU-CD：* coming soon
+*LEVIR-CD:  coming soon  
+GZ-CD：* coming soon
+
+After downloading and splitting the dataset, change the position of your own dataset in the **constants. py** file.
+
+##### Run:
+Taking the gz cd dataset as an example, first switch to the/AENet/src/directory:
+
+1、Training: ` python train.py train --exp_comfig ../configs/gzcd/config_gzcd_clnet.yaml`      
+
+2、Test: ` python train.py eval --exp_config ../configs/gzcd/config_gzcd_clnet.yaml --resume ../exp/gzcd/weights/model_best_clnet.pth --save_on --subset test` 
+
+3、Continuing the training from the breakpoint: ` python train.py train --exp_config PATH_TO_CONFIG_FILE --resume PATH_TO_CHECKPOINT ` (where PATH_TO_CONFIG_FILE is the configuration in the configs directory, and PATH_TO_CHECKPOINT is the model parameter saved in the exp directory)
+
+
+
+###### Declaration: The implementation of the code in this article uses the shell of CDLab.  My code has been highly streamlined based on this.  If further understand and modification of the model's shell are required, please refer to the source code https://github.com/Bobholamovic/CDLab.
+
