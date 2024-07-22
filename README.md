@@ -13,7 +13,7 @@ The specific sources of three open-source datasets can be found through the cita
 
 *LEVIR-CD:* coming soon
 
-After downloading and splitting the dataset, change the path of your own dataset in the **constants. py** file.
+After downloading and splitting the dataset, change the path of your own dataset in the **constants.py** file.
 
 ##### 3、Run:
 Taking the gz-cd dataset as an example, first switch to the path /AENet/src/:
