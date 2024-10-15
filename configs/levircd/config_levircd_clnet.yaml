@@ -1,0 +1,39 @@
+# LEVIR-CD+P2V
+
+out_dir: clnet
+criterion: WBCE
+model: CLNet
+out_type: logits
+
+p2v_model:
+  in_ch: 3
+  video_len: 8
+cmb_coeffs:
+  - 1.0
+  - 0.4
+  - 0.4
+
+device: cuda:2
+# device: 7   以后直接这样设置卡
+
+# Criterion
+weights: 
+  - 0.5   # Weight of no-change class
+  - 0.5   # Weight of change class
+
+# Optimizer
+optimizer: Adam
+lr: 0.0002
+weight_decay: 0.0
+load_optim: False
+save_optim: False
+sched_on: True
+schedulers:
+  - name: StepLR
+    step_size: 300
+    gamma: 0.2
+
+
+# Training related
+batch_size: 8
+num_epochs: 20
