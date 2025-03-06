@@ -35,10 +35,14 @@ python train.py train --exp_config PATH_TO_CONFIG_FILE --resume PATH_TO_CHECKPOI
  (where PATH_TO_CONFIG_FILE is the configuration in the configs directory, and PATH_TO_CHECKPOINT is the model parameter saved in the exp directory)
 
 
-The following is the internal structure diagram of the encoding and decoding modules in the paper：
+The following is the architecture and module design of this model：
+![image](https://github.com/user-attachments/assets/0997c8cf-d617-4b6e-9110-a2916bb7e40d)
+
 
 ![image](https://github.com/user-attachments/assets/c1f5d05a-40e8-4761-a945-021578b64558)
 
+
+![image](https://github.com/user-attachments/assets/e0e3f327-1a65-4245-8e6b-4f5e454117a0)
 
 Declaration: The implementation of the code in this article uses the shell of CDLab.  My code has been highly streamlined based on this.  If further understand and modification of the model's shell are required, please refer to the source code https://github.com/Bobholamovic/CDLab.
 
